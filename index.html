@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma première fiche Tailwind</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="bg-fond text-texte">
+    <header
+      class="border-b border-accent-secondaire bg-fond/80 backdrop-blur-md"
+    >
+      <div
+        class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-4"
+      >
+        <a
+          href="#"
+          class="rounded-md font-mono text-xl font-bold tracking-tight"
+        >
+          <span class="text-accent" aria-hidden="true">&gt;</span>
+          DevMeet
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul class="flex flex-wrap gap-2 text-sm font-medium">
+            <li>
+              <a
+                href="#programme"
+                class="block rounded-full px-3 py-2 text-texte-doux transition-colors hover:bg-surface hover:text-texte sm:px-4"
+              >
+                Programme
+              </a>
+            </li>
+            <li>
+              <a
+                href="#infos"
+                class="block rounded-full px-3 py-2 text-texte-doux transition-colors hover:bg-surface hover:text-texte sm:px-4"
+              >
+                Infos pratiques
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="presentation" class="border-b border-accent-secondaire">
+        <div class="mx-auto max-w-5xl px-4 py-16 sm:py-24">
+          <h1
+            id="titre-presentation"
+            class="mt-4 max-w-3xl text-4xl font-bold text-balance sm:text-6xl"
+          >
+            Une soirée pour les <span class="text-accent">développeurs</span>
+          </h1>
+          <p class="mt-6 max-w-3xl text-lg text-texte-doux">
+            Trois conférences courtes pour découvrir des pratiques concrètes,
+            échanger et repartir avec de nouvelles idées pour vos projets web.
+          </p>
+          <div class="flex flex-wrap items-center mt-8 gap-6">
+            <ul class="flex flex-wrap gap-3 text-sm">
+              <li
+                class="rounded-full border border-accent-secondaire bg-surface px-4 py-2"
+              >
+                <span class="text-texte-doux">date :</span>
+                <span>12 novembre 2026</span>
+              </li>
+              <li
+                class="rounded-full border border-accent-secondaire bg-surface px-4 py-2"
+              >
+                <span class="text-texte-doux">ville :</span> Lyon
+              </li>
+            </ul>
+            <a
+              href="#programme"
+              class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-fond transition-colors hover:bg-accent-hover"
+            >
+              &gt; Voir le programme
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="programme" class="border-b border-accent-secondaire">
+        <div class="mx-auto max-w-5xl px-4 py-16 sm:py-24">
+          <h2 id="titre-programme" class="text-3xl font-bold sm:text-4xl">
+            Programme
+          </h2>
+          <ol class="mt-10 grid gap-6 lg:grid-cols-3">
+            <li>
+              <article
+                class="flex h-full flex-col rounded-2xl border border-accent-secondaire bg-surface p-6"
+              >
+                <div class="flex flex-wrap items-center gap-2">
+                    <p
+                      class="self-start rounded-md bg-accent/10 px-2 py-1 text-sm font-semibold text-accent"
+                    >
+                      18 h 45
+                    </p>
+                    <h3 class="text-xl font-bold">
+                      Des interfaces qui restent lisibles
+                    </h3>
+                </div>
+                <p class="mt-3 mb-6 text-sm text-texte-doux">
+                  Hiérarchie, contrastes et espacements : des choix simples qui
+                  améliorent une interface.
+                </p>
+                <div
+                  class="mt-auto text-sm"
+                >
+                  <p class="font-semibold">Camille Martin</p>
+                  <p class="text-texte-doux">Développeuse front-end</p>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article
+                class="flex h-full flex-col rounded-2xl border border-accent-secondaire bg-surface p-6"
+              >
+                <div class="flex flex-wrap items-center gap-2">
+                    <p
+                      class="self-start rounded-md bg-accent/10 px-2 py-1 text-sm font-semibold text-accent"
+                    >
+                      19 h 15
+                    </p>
+                    <h3 class="text-xl font-bold">
+                      Un CSS plus facile à maintenir
+                    </h3>
+                </div>
+                <p class="mt-3 mb-6 text-sm text-texte-doux">
+                  Organiser ses styles et ses composants pour faire évoluer un
+                  projet sans tout reprendre.
+                </p>
+                <div
+                  class="mt-auto text-sm"
+                >
+                  <p class="font-semibold">Alex Moreau</p>
+                  <p class="text-texte-doux">Intégrateur web</p>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article
+                class="flex h-full flex-col rounded-2xl border border-accent-secondaire bg-surface p-6"
+              >
+                <div class="flex flex-wrap items-center gap-2">
+                  <p
+                    class="self-start rounded-md bg-accent/10 px-2 py-1 text-sm font-semibold text-accent"
+                  >
+                    19 h 45
+                  </p>
+                  <h3 class="text-xl font-bold">
+                    Du code au site en accent-secondaire
+                  </h3>
+                </div>
+                <p class="mt-3 mb-6 text-sm text-texte-doux">
+                  Comprendre les vérifications utiles avant de livrer une petite
+                  application web.
+                </p>
+                <div
+                  class="mt-auto text-sm"
+                >
+                  <p class="font-semibold">Sam Benali</p>
+                  <p class="text-texte-doux">Développeur web</p>
+                </div>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+    <section id="infos">
+        <div class="mx-auto max-w-5xl px-4 py-16 sm:py-24">
+            <h2 id="titre-infos" class="text-3xl font-bold sm:text-4xl">
+                Informations pratiques
+            </h2>
+            <dl class="mt-10 grid gap-6 sm:grid-cols-2">
+                <div class="rounded-2xl border border-accent-secondaire bg-surface p-6">
+                    <p class="text-sm font-semibold text-accent">Lieu</p>
+                    <span class="mt-2 text-lg">Le Hub, Lyon</span>
+                </div>
+                <div class="rounded-2xl border border-accent-secondaire bg-surface p-6">
+                    <p class="text-sm font-semibold text-accent">Horaires</p>
+                    <span class="mt-2 text-lg">Accueil à 18 h 30, fin de la soirée à 21 h</span>
+                </div>
+                <div class="rounded-2xl border border-accent-secondaire bg-surface p-6">
+                    <p class="text-sm font-semibold text-accent">Tarif</p>
+                    <span class="mt-2 text-lg">Entrée gratuite, dans la limite des places disponibles</span>
+                </div>
+                <div class="rounded-2xl border border-accent-secondaire bg-surface p-6">
+                    <p class="text-sm font-semibold text-accent">Contact</p>
+                    <span class="mt-2 text-lg">
+                        <a href="mailto:bonjour@devmeet.example" class="hover:text-accent">
+                            bonjour@devmeet.example
+                        </a>
+                    </span>
+                </div>
+            </dl>
+        </div>
+    </section>
+    </main>
+  </body>
+</html>
